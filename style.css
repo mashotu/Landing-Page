@@ -3,3 +3,38 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 16px;
+}
+
+li.logo {
+    margin-right: auto;
+}
+
+.main-image {
+    display: flex;
+    justify-content: center;
+}
+
+.main-title {
+    flex: 1 1;
+    flex-wrap: wrap;
+}
+
+.image {
+    flex: 0 1;
+}
+
+div {
+    border: 2px solid black;
+}
