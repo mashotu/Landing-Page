@@ -1,78 +1,151 @@
+/* General Styles */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
-.one, .two, .three, .four {
-    flex-grow: 1;
-}
-
-.one {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer {
-    margin-top: auto;
-    margin: 0 auto;
-}
-
-.header ul {
-    display: flex;
-    text-decoration: none;
-    list-style-type: none;
-    gap: 16px;
+/* Header */
+.header {
+    background-color: #1F2937;
+    padding: 20px 10%;
+    color: white;
 }
 
 li.logo {
     margin-right: auto;
 }
 
-.main-image {
+.header ul {
     display: flex;
-    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.one {
+    background-color: #1F2937;
+    color: white;
+    padding: 50px 10%;
+    display: flex;
     align-items: center;
-    flex: 1;
+    justify-content: center;
 }
 
 .main {
-    flex: 1;
+    max-width: 50%;
 }
 
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.main p {
+    margin: 10px 0;
+    color: #e5e7eb;
+}
+
+button {
+    background-color: #3882F6;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 .image {
-    flex: 1;
-}
-
-.main-image-dimension {
+    background-color: grey;
+    width: 40%;
+    height: 200px;
     display: flex;
-    justify-content: center;
-    width: 60%;
-}
-
-.two {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+/* Information Section */
+.two {
+    text-align: center;
+    padding: 50px 10%;
+    padding-top: 2%;
 }
 
 .two-images {
     display: flex;
-}
-
-
-.four {
-    display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 25px;
+    font-size: small;
 }
 
-div {
-    border: 2px solid black;
+.two-image {
+    display: flex;
+    flex: 0 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.two-image div {
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Testimonial Section */
+.three {
+    background-color: #E5E7EB;
+    padding: 50px 10%;
+    font-style: italic;
+    font-size: 36px;
+}
+
+.thor {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Call to Action Section */
+.four {
+    background-color: #3882F6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.four-right {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1F2937;
+    color: white;
 }
