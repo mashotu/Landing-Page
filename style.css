@@ -5,10 +5,24 @@
 }
 
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+.one, .two, .three, .four {
+    flex-grow: 1;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+    margin: 0 auto;
+}
 
 .header ul {
     display: flex;
@@ -24,15 +38,39 @@ li.logo {
 .main-image {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
-.main-title {
-    flex: 1 1;
-    flex-wrap: wrap;
+.main {
+    flex: 1;
 }
+
 
 .image {
-    flex: 0 1;
+    flex: 1;
+}
+
+.main-image-dimension {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.two-images {
+    display: flex;
+}
+
+
+.four {
+    display: flex;
+    justify-content: center;
 }
 
 div {
